@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1>Familia Corona Tarango</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function show(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edadesFamilia = {
+    	edadPadre: 65,
+    	edadMadre: 67,
+    	edadHijo1: 42,
+    	edadHijo2: 38,
+    	edadHijo3: 34,
+    	edadHija: 32
+    }
+    var totalEdades = 0;
+
+    for (const miembro in edadesFamilia)
+    	totalEdades += edadesFamilia[miembro];
+
+    var media = totalEdades / Object.keys(edadesFamilia).length;
+
+    show("La media de los Corona Tarango es: " + media);
+
+</script>

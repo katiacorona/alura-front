@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+
+<h1>Calculadora de IMC</h1>
+
+<script>
+	
+	function saltarLinea() {
+		document.write("<br><br><br>");
+	}
+
+	function imprimir(mensaje) {
+		document.write(`<big>${mensaje}</big>`);
+		saltarLinea();
+	}
+
+	var target = Math.round(Math.random() * 10);
+
+	var chances = 3;
+
+	while (chances > 0) {
+		var guess = prompt("Adivina el número: ");
+
+		if (target == guess) {
+			alert(`¡Correcto! Te tomó ${3 - chances} intentos`);
+			break;
+		} else {
+			alert(`Te quedan ${chances - 1} intentos`)
+		}
+		chances--;
+	}
+	imprimir(`El número era: ${target}`);
+
+</script>

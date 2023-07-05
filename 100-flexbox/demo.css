@@ -1,0 +1,17 @@
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 50px;
+    width: 15%;
+    background-color: green;
+    margin: 1% 1%;
+}

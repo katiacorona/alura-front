@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+
+<h1>2023 Season - West Coast</h1>
+
+<script >
+	
+	function lineBreak() {
+		document.write("<br><br><br>");
+	}
+
+	function show(message) {
+		document.write(message);
+		lineBreak();
+	}
+
+	function showPosition(curr, prev) {
+		if (curr < prev) return "Team is getting worse :( "
+
+		else if (total > lastYear) return "Team is getting better! :D "
+
+		else return "Team is not moving :| "
+	}
+
+	var wins = prompt("Wins: ");
+	var ties = prompt("Ties: ");
+	var lastYear = prompt("Last Year Points: ");
+	var total = parseInt(wins) *  3 + parseInt(ties);
+	
+	show(`Points this year: <hr>${total}<hr>`); 
+
+	show(`Team's performance this year: <hr>${showPosition(total, lastYear)}<hr>`)
+
+</script>

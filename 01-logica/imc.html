@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+
+<h1>Calculadora de IMC</h1>
+
+<script>
+	
+	function saltarLinea() {
+		document.write("<br><br><br>");
+	}
+
+	function imprimir(mensaje) {
+		document.write(`<big>${mensaje}</big>`);
+		saltarLinea();
+	}
+
+	function calcularIMC(peso, altura) {
+		return Math.round(peso / (altura ** 2));
+	}
+
+	var peso = prompt("Enter weight: ");
+	var altura = prompt("Enter height: ");
+
+	imc = calcularIMC(peso, altura);
+
+	imprimir(`El IMC es: ${imc}`);
+	imprimir("<hr>");
+	if (imc < 18.5) imprimir("Bajo peso");
+	else if (imc < 25) imprimir("Peso normal");
+	else if (imc < 30) imprimir("Obesidad");
+	else if (imc < 35) imprimir("Obesidad Grado I");
+	else if (imc < 40) imprimir("Obesidad Grado II");
+	else imprimir("Obesidad Grado III u Obesidad Mórbida");
+	imprimir("<hr>");
+
+</script>

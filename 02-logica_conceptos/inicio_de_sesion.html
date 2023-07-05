@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+
+    var intentos = 3;
+    var valid = false;
+
+    while (intentos > 0) {
+
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if ( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            valid = true;
+            break;
+        } else {
+            alert("inicio de sesión inválido. Favor intente de nuevo");
+        }
+        intentos--;
+    }
+
+    if (valid == true) {
+        document.write("<h3>Bienvenido</h3>");
+    } else {
+        document.write("Credenciales inválidas. Contacte a su organización.");
+    }
+
+</script>

@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var multiplicador = 1;
+    var tabla = prompt("¿Qué tabla quieres visualizar? ");
+
+    imprimir(`<h1>Tabla del ${tabla}</h1>`)
+    while (multiplicador <= 10) {
+    	imprimir(`${tabla} x ${multiplicador} = ${tabla * multiplicador}<hr><br>`);
+    	multiplicador++;
+    }
+
+</script>

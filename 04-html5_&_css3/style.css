@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #2B2A38;
+    color: #F2F2F2;
+}
+
+.titulo-principal {
+    padding-left: 30px;
+}
+
+#banner {
+    width: 100%;
+}
+
+.principal {
+    background: #261C2F;
+    padding: 20px;
+}
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+em strong {
+    color: #4AFF78;
+}
+
+#mision {
+    font-size: 20px;
+}
+
+.diferenciales {
+    background: #261C2F;
+    padding: 30px;
+}
+
+.items {
+    font-style: italic;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  - - - - - -     Hexa for:
+  r r g g b b
+# F F 0 0 0 0  -> red
+# 0 0 F F 0 0  -> green
+# 0 0 0 0 F F  -> blue
+# 0 0 0 0 0 0  -> blanco
+# F F F F F F  -> negro
+rgb(255, 0, 0) -> RGB red
+0   -> menor
+255 -> max
+*/

@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<h1>Pairs Only</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function show(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var n = 2;
+
+    while (n <= 100) {
+    	show(`${n}`);
+    	n += 2;
+    }
+
+    show("FIN");
+
+</script>
