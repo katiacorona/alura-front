@@ -1,4 +1,4 @@
-.encabezado {
+/* .encabezado {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,4 +14,20 @@
     width: 15%;
     background-color: green;
     margin: 1% 1%;
-}
+} */
+
+
+.flexContainer {
+    display: flex;
+  }
+
+.flexItem {
+    background-color: blueviolet;
+    border-right: .5px solid rgb(0, 162, 255);
+    width: 200px;
+    height: 50px;
+  }
+
+  .flexItem:first-child {
+    flex-shrink: 2;
+  }
